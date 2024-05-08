@@ -1,6 +1,6 @@
 # Blog App
 ---- 
-Video time 1.19.16
+Video time 1.37.00
 
 # fork all important repo into yours and make it private
 # create a one open doc write thier all open links of notes and inp docs
