@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/blog-console/static/css/main.96582f90.css",
+    "main.js": "/blog-console/static/js/main.8625edb2.js",
+    "static/media/blog1.jpg": "/blog-console/static/media/blog1.88b76b39e5b8bc07f272.jpg",
+    "static/media/blog4.jpg": "/blog-console/static/media/blog4.60da1fcb47ff8baeaf54.jpg",
+    "static/media/blog3.jpg": "/blog-console/static/media/blog3.faf0c291931b113130d0.jpg",
+    "static/media/blog22.jpg": "/blog-console/static/media/blog22.03ef9009b121a36c959f.jpg",
+    "static/media/blog2.jpg": "/blog-console/static/media/blog2.bd7550db5a278835f905.jpg",
+    "static/media/r-logo.png": "/blog-console/static/media/r-logo.8d367b5ca0327e5bf50b.png",
+    "static/media/avatar5.jpg": "/blog-console/static/media/avatar5.d25e9a28e32aa5201afa.jpg",
+    "static/media/avatar15.jpg": "/blog-console/static/media/avatar15.09ccdf72196347fe29cc.jpg",
+    "index.html": "/blog-console/index.html",
+    "main.96582f90.css.map": "/blog-console/static/css/main.96582f90.css.map",
+    "main.8625edb2.js.map": "/blog-console/static/js/main.8625edb2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96582f90.css",
+    "static/js/main.8625edb2.js"
+  ]
+}
