@@ -28,7 +28,7 @@ export const Register = () => {
           <input type="password" placeholder='Confirm Password' name='password2' value={userData.password2} onChange={changeInputHandler}/>
           <button type="submit" className='btn primary'>Register</button>
         </form>
-        <small>Already Have an Account? <Link to="/login">Sign Up</Link></small>
+        <small>Already Have an Account? <Link to="/login">Sign In</Link></small>
       </div>
     </section>
   )
