@@ -12,7 +12,7 @@ export const Header = () => {
             <img src={Logo} alt="Logo" />
           </Link>
           <ul className='nav__menu'>
-            <li><Link to="/profile">Rishi</Link></li>
+            <li><Link to="/profile/sdsds">Rishi</Link></li>
             <li><Link to="/create">Create</Link></li>
             <li><Link to="/authors">Authors</Link></li>
             <li><Link to="/logout">Logout</Link></li>
