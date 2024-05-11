@@ -22,8 +22,9 @@ export const UserProfile = () => {
               <input type="file" name='avatar' id='avatar' onChange={e=>{setAvatar(e.target.files[0])}} accept='png, jpg, jpeg'/>
               <label htmlFor="avatar"><FaEdit/></label>
             </form>
-            <button className='profile__avatar-btn'><FaCheck/></button>
+            {/* <button className='profile__avatar-btn'><FaCheck/></button> */}
           </div>
+
         </div>
       </div>
     </section>
