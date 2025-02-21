@@ -13,8 +13,8 @@ const registerUser = async (req, res, next) => {
         if(!name || !email || !password){
             return next(new HttpError("Fill in all Fields.", 422))
         }
-        const newEmail = email.toLowerCase()
-        const emailExists = await User.findOne({email: newEmail})
+        const newEmail = email.toLowerCase();
+        const emailExists = await User.findOne({email: newEmail});
 
         if(emailExists){
             return next(new HttpError("Email already exists.", 422))
@@ -30,9 +30,10 @@ const registerUser = async (req, res, next) => {
 
         const salt = await bcrypt.genSalt(10);
         const hashedPass = await bcrypt.hash(password, salt);
-        const newUser = await User.create({name, email:email, password: hashedPass});
+        const newUser = await User.create({name, email:emailExists, password: hashedPass});
         res.status(201).json(newUser);
     } catch (error) {
+        console.log(error);
         return next(new HttpError("User registration failed.", 422))
     }
 };
