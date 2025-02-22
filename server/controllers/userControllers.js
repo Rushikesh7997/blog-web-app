@@ -30,8 +30,9 @@ const registerUser = async (req, res, next) => {
 
         const salt = await bcrypt.genSalt(10);
         const hashedPass = await bcrypt.hash(password, salt);
-        const newUser = await User.create({name, email:emailExists, password: hashedPass});
+        const newUser = await User.create({name, email:newEmail, password: hashedPass});
         res.status(201).json(newUser);
+        // res.status(201).json(`New User ${newUser.email} registered.`);
     } catch (error) {
         console.log(error);
         return next(new HttpError("User registration failed.", 422))
