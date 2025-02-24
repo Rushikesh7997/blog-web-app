@@ -117,7 +117,7 @@ const changeAvatar = async (req, res, next) => {
         fileName = avatar.name;
         let splittedFilename = fileName.split('.');
         let newFilename = splittedFilename[0] + uuid() + '.' + splittedFilename[splittedFilename.length-1];
-        avatar.mv(path.join(__dirname,'...', 'uploads', newFilename),async (err)=>{
+        avatar.mv(path.join(__dirname,'..', 'uploads', newFilename),async (err)=>{
             if(err){
                 return next(new HttpError(err))
             }
@@ -128,6 +128,7 @@ const changeAvatar = async (req, res, next) => {
             res.status(200).json(updatedAvatar)
         })
     } catch(error) {
+        console.log(error)
         return next(new HttpError(error))
     }
 };
