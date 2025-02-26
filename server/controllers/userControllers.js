@@ -28,7 +28,7 @@ const registerUser = async (req, res, next) => {
         }
 
         if(password != password2){
-            return next(new HttpError("Password don not match", 422))
+            return next(new HttpError("Password do not match", 422))
         }
 
         const salt = await bcrypt.genSalt(10);

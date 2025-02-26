@@ -17,11 +17,12 @@ import { Dashboard } from "./Pages/Dashboard";
 import { Logout } from "./Pages/Logout";
 import { AuthorPosts } from "./Pages/AuthorPosts";
 import { CategoryPosts } from "./Pages/CategoryPosts";
+import UserProvider from "./context/userContext";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: <UserProvider><Layout/></UserProvider>,
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home /> },
