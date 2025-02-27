@@ -243,9 +243,9 @@ footer{
     cursor: pointer;
 }
 
-.posts:hover{
-    box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.1);
-}
+/* .posts:hover{ */
+    /* box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.1); */
+/* } */
 
 .post__thumbnail{
     border-radius: var(--radius-3);
@@ -514,6 +514,7 @@ input, select, textarea{
     top:0;
     display: gird;
     place-items: center;
+    background: var(--color-bg);
 }
 
 .loader__image{
