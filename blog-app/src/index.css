@@ -504,6 +504,23 @@ input, select, textarea{
     gap: 1rem;
 }
 
+/* loader */
+
+.loader{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    left: 0;
+    top:0;
+    display: gird;
+    place-items: center;
+}
+
+.loader__image{
+    width: 4.5rem;
+    aspect-ratio: 1/1;
+}
+
 
 /* Responsive Css Code */
 
