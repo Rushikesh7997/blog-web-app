@@ -26,7 +26,7 @@ export const Header = () => {
             <img src={Logo} alt="Logo" />
           </Link>
           {currentUser?.id && isNavShowing && <ul className='nav__menu'>
-            <li><Link to="/profile/sdsds" onClick={closeNavHandler}>Rishi</Link></li>
+            <li><Link to="/profile/sdsds" onClick={closeNavHandler}>{currentUser?.name}</Link></li>
             <li><Link to="/create" onClick={closeNavHandler}>Create</Link></li>
             <li><Link to="/authors" onClick={closeNavHandler}>Authors</Link></li>
             <li><Link to="/logout" onClick={closeNavHandler}>Logout</Link></li>
