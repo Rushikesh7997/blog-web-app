@@ -181,7 +181,7 @@ const deletePost = async(req, res, next) =>{
                     return next(new HttpError(err))
                 }
                 else{
-                    await Post.findByIdAndDelete(PostId);
+                    await Post.findByIdAndDelete(postId);
                     // find user and reduce post count by 1
                     const currentUser = await User.findById(req.user.id);
                     const userPostCount = currentUser?.posts-1;

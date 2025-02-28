@@ -512,7 +512,7 @@ input, select, textarea{
     position: relative;
     left: 0;
     top:0;
-    display: gird;
+    display: grid;
     place-items: center;
     background: var(--color-bg);
 }
