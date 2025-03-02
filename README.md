@@ -51,8 +51,7 @@ To run this application locally, follow these steps:
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository_url>
-    cd <project_directory>
+    git clone
     ```
 
 2.  **Install backend dependencies:**
