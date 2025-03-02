@@ -57,17 +57,17 @@ To run this application locally, follow these steps:
 2.  **Install backend dependencies:**
 
     ```bash
-    cd backend
+    cd server
     npm install
     ```
 
 3.  **Configure environment variables:**
 
-    * Create a `.env` file in the `backend` directory.
+    * Create a `.env` file in the `server` directory.
     * Add the following variables:
 
         ```
-        PORT=5000 # or any other port
+        PORT=5000 
         MONGODB_URI=<your_mongodb_connection_string>
         JWT_SECRET=<your_jwt_secret_key>
         ```
@@ -94,7 +94,6 @@ To run this application locally, follow these steps:
 7.  **Open the application in your browser:**
 
     * Navigate to `http://localhost:3000` (or the port specified in your frontend configuration).
-
 
 
 ### Future Enhancements
